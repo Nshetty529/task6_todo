@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced Todo List Application</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="themeBody" class="light-mode">
+    <div class="container my-5">
+        <h1 class="text-center mb-4">Enhanced Todo List Application</h1>
+        <div class="d-flex justify-content-end mb-3">
+            <button id="themeToggle" class="btn btn-secondary">Toggle Dark Mode</button>
+        </div>
+        <div class="input-group mb-3">
+            <input type="text" id="taskInput" class="form-control" placeholder="Add a new task">
+            <input type="date" id="dueDate" class="form-control">
+            <select id="priority" class="form-select">
+                <option selected>Priority</option>
+                <option value="high">High</option>
+                <option value="medium">Medium</option>
+                <option value="low">Low</option>
+            </select>
+            <button id="addTaskBtn" class="btn btn-primary">Add Task</button>
+        </div>
+
+        <div class="filters mb-3">
+            <button id="showAll" class="btn btn-outline-secondary">All</button>
+            <button id="showCompleted" class="btn btn-outline-secondary">Completed</button>
+            <button id="showPending" class="btn btn-outline-secondary">Pending</button>
+        </div>
+
+        <div class="sort-options mb-3">
+            <button id="sortByDate" class="btn btn-outline-info">Sort by Due Date</button>
+            <button id="sortByPriority" class="btn btn-outline-info">Sort by Priority</button>
+        </div>
+
+        <ul id="taskList" class="list-group">
+            <!-- Tasks will be dynamically added here -->
+        </ul>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
